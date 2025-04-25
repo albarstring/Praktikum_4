@@ -6,9 +6,34 @@
     <title>Praktikum 5</title>
 </head>
 <body>
+    <!-- internal javascript -->
     <button onclick="document.getElementById('demo').innerText = 'Hello World'"">Click</button>
     <div>
         <p id="demo"></p>
     </div>
+
+    <button onclick="alert('Hello World')">Click more</button>
+
+    <!-- embed javascript-->
+     <script>
+        function sapa(){
+            document.getElementById('demo2').innerText = 'Selamat Pagi'   
+        }
+     </script>
+     <br>
+     <br>
+     <button onclick="sapa()">Click more more</button>
+     
+     <div>
+        <p id="demo2"></p>
+     </div>
+
+     <!--3 external javascript -->
+     <br>
+     <button id="btn1">Click more more more</button>
+     <div>
+        <p id="demo3"></p>
+     </div>
+     <script src="/js/main.js"></script>
 </body>
 </html>
